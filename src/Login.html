@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Enyew Anberir">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href=".css">
+        <link rel="stylesheet" href="Login.css">
         <script src="https://kit.fontawesome.com/1fb9bac157.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -17,16 +17,21 @@
                 <h1>Enyew Agro
 Industry</h1>
             </div>
+            <div class="bars">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <div class="nav">
-                <nav>
+                <nav class="navBar">
                     <ul id="one">
-                        <li class="n" ><a href="Home.html">Home</a></li>
+                        <li class="n" ><a href="index.html">Home</a></li>
                         <li class="n"><a href="About.html">About Us</a></li>
                         <li class="n"><a href="Products.html">Products</a></li>
                         <li class="n"><a href="Shop.html">Shop</a></li>
                         <li class="n"><a href="Services.html">Service</a></li>
                         <li class="n"><a href="Contact.html">Contact Us</a></li>
-                        <li class="n"><a href="Login.html">Login</a></li>
+                        <li class="m"><a href="Login.html">Login</a></li>
                         <li class="n"><a href="Register.html">Register</a></li>
                     </ul>
 
@@ -35,32 +40,43 @@ Industry</h1>
             <br>
         </header>
         <main>
+            <form name = "LoginForm" action="/action_page.php" onsubmit="return validation()" method="post">
                 <h1>Welcome to Our Company Account Page</h1>
+                <div class="login">
                 <fieldset>
-                <legend><h2>Login to your Account</h2> </legend>
-                <label for="email">Email</label><br>
-                <input id="email" type="text" placeholder="Enter your email account"> <br><br>
-                <label for="pass">Password</label><br>
-                <input id="pass" type="password" placeholder="Enter your password"><br><br>
+                    <legend><h2>Login to your Account</h2> </legend>
+                    <div class="lab">
+                        <label for="email">Email</label><br>
+                        <input id="email" type="text" placeholder="Enter your email account" required > <br><br>
+                        <div id="err" class="error"></div>
+                        <label for="pass">Password</label><br>
+                        <input name="pass" id="pass" type="password" placeholder="Enter your password" required><br><br>
+                        <div id="err1" class="error"></div>
                 
-                <button>Login</button><br>
-                <a href="register.html">Don't have an account</a>
-            </fieldset>
+                        <button>Login</button><br>
+                    <a href="register.html">Don't have an account?</a>
+                    </div>
+                </fieldset>
+            
+        </form>
+        <p id ="demo"></p>
+        </div>
         </main>
             <hr>
         <footer>
                 <div class="footer">
                 <p>Copyright &copy; 2023 Ethiopia, All right reserved</p>
                 <div class="last"><p>Follow us on</p>
-                    <a href="www.instagram.com">instagram<i class="fa-brands fa-instagram"></i></a>
-                    <a href="www.twitter.com">twitter<i class="fa-brands fa-twitter"></i></a>
-                    <a href="www.facebook.com">facebook<i class="fa-brands fa-facebook"></i></a>
-                    <a href="www.linkedin.com">linkedin<i class="fa-brands fa-linkedin"></i></a>
+                    <a href="www.Instagram.com">Instagram<i class="fa-brands fa-instagram"></i></a>
+                    <a href="www.Twitter.com">Twitter<i class="fa-brands fa-twitter"></i></a>
+                    <a href="www.Facebook.com">Facebook<i class="fa-brands fa-facebook"></i></a>
+                    <a href="www.Linkedin.com">Linkedin<i class="fa-brands fa-linkedin"></i></a>
             </div>
     
     
             </div>
     
         </footer>
+        <script src="code.js"></script>
     </body>
 </html>
