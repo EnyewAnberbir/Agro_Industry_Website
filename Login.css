@@ -1,0 +1,575 @@
+body{
+    overflow: auto;
+    background: linear-gradient(-45deg, #ff9f4d 10%, #ffc857 0, #ffc857 90%, #ff9f4d 0, #ff9f4d 100%);
+    
+}
+.header{
+    position: relative;
+    top: 20px;
+}
+.head{
+    position: absolute;
+    top:0;
+    left: 120px;
+}
+.nav a{
+    text-decoration: none;
+    font-size: 23px;
+
+}
+input{
+    background-color:rgb(255, 184, 140)
+}
+input:hover{
+    background-color: white;
+}
+header a{
+    text-decoration: none;
+    font-size: 23px;
+    color:rgb(8, 8, 8);
+
+}
+header a:hover{
+    text-decoration: underline;
+    color:rgb(75, 165, 239);
+}
+.nav ul{
+    list-style: none;
+    display: inline-flex;
+    position: absolute;
+    top: 20px;
+    right:0;
+    z-index: 1;
+}
+.bars{
+    display: none;
+}
+.navBar.active{
+    display: block;
+}
+.m{
+    margin-left: 30px;
+    margin-right:12px;
+    }
+.n{
+    margin-right:12px;
+}
+main h1{
+    text-align: center;
+}
+button{
+    position: relative;
+    left: 823px;
+    bottom:-34px;
+}
+fieldset{
+    width: 600px;
+    height: 340px;
+    background-color:rgb(247, 214, 143)
+}
+.lab{
+    padding: 23px;
+    margin-left: 99px;
+    position: relative;
+}
+.lab button{
+    position: absolute;
+    left: 180px;
+    margin-top: 12px;
+}
+.lab a{
+    position: absolute;
+    bottom: 1px;
+}
+.lab input{
+    position: absolute;
+    left: 50px;
+    margin-top: 12px;
+    margin-bottom: 7px;
+}
+.login{
+    margin-left: 240px;
+    margin-bottom: 130px;
+    padding: 50px;
+}
+.login a{
+    font-size: 17px;
+    margin-left: 80px;
+    text-decoration: none;
+}
+.error{
+    position: relative;
+    left: 30px;
+    top: 0px;
+    color:red;
+}
+.login a:hover{
+    text-decoration: underline;
+    color: black;
+}
+footer{
+    position: relative;
+    height: 110px;
+}
+.last{
+    position: absolute;
+    top:0;
+    margin-bottom: 0;
+    right:24px;
+}
+footer p{
+    font-size: 20px;
+}
+.footer a{
+    margin-right: 12px;
+    font-size: 23px;
+    text-decoration: underline;
+    color: black;
+} 
+.footer a:hover{
+    text-decoration: none;
+    
+}
+.footer a i{
+    margin-left: 5px;
+}
+main h1{
+    text-align: center;
+}
+main{
+    position: relative;
+}
+.part1 h2{
+    margin-left: 20px;
+}
+header{
+    background-color: #dfb563;
+    position:sticky;
+    top:0;
+    z-index: 1;
+}
+footer{
+    background-color: #dfb563;
+}
+@media screen and (max-width: 1200px){   
+    .header{
+        position: relative;
+        top: 20px;
+    }
+    .head{
+        top: 21px;
+        left: 120px;
+        font-size: 16px;
+    }
+    .header{
+        position: relative;
+        top: 50px;
+    }
+    header a{
+        font-size: 21px;
+    }
+    ul{
+        top: 35px;
+        right:0;    
+    }
+    li.m{
+        margin-left: 5px;
+        margin-right:12px;
+        }
+    li.n{
+        margin-right:9px;
+    }
+    .pag p{
+        font-size: 12px;
+        padding: 12px;        
+    }
+    .foot{
+        bottom: 2px;
+        left: 370px;       
+    }
+    footer p{
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .last{
+        top:12px;
+    }
+
+}
+@media screen and (max-width: 1080px){   
+    .header{
+        position: relative;
+        top: 20px;
+    }
+    .head{
+        top: 29px;
+        left: 120px;
+        font-size: 11px;
+    }
+    .header{
+        position: relative;
+        top: 50px;
+    }
+    header a{
+        font-size: 21px;
+    }
+    .nav a{
+        font-size: 19px;
+    }
+    ul{
+        top: 35px;
+        right:0;    
+    }
+    li.m{
+        margin-left: 5px;
+        margin-right:12px;
+        }
+    li.n{
+        margin-right:9px;
+    }
+    .pag p{
+        font-size: 12px;
+        padding: 12px;        
+    }
+    .foot{
+        bottom: 2px;
+        left: 370px;       
+    }
+    footer p{
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .last{
+        top:12px;
+    }
+
+}
+@media screen and (max-width: 960px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 900px;
+    } 
+    footer p{
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :20px;
+    }
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        margin-left:5px;
+    }
+    .foot{
+        left: 100px; 
+        right: 100px;   
+    }
+    .login{
+        margin-left: 50px;
+        margin-right: 150px;
+        margin-bottom: 130px;
+        padding: 50px;
+    }
+}
+@media screen and (max-width: 780px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 900px;
+    }
+    .login{
+        margin-left: 5px;
+        margin-right: 450px;
+        margin-bottom: 130px;
+        padding: 50px;
+    }
+    fieldset{
+        width: 400px;
+    }
+    .lab{
+        padding: 13px;
+        margin-left: 69px;
+    }
+}
+@media screen and (max-width: 600px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 600px;
+    }
+    footer p{
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :14px;
+    }
+    .lab{
+        padding: 13px;
+        margin-left: 9px;
+        position: relative;
+    }
+    .lab button{
+        position: absolute;
+        left: 180px;
+        bottom: -72px;
+        margin-top: 12px;
+    }
+    .lab a{
+        bottom: -34px;
+    }
+    .lab input{
+        left: 50px;
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+    .login{
+        margin-left: 5px;
+        margin-right: 450px;
+        margin-bottom: 130px;
+        padding: 50px;
+    }
+    fieldset{
+        width: 250px;
+
+    }
+}
+@media screen and (max-width: 400px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 400px;
+    }
+    footer p{
+        font-size: 17px;
+        margin-bottom: 5px;
+    }
+    .last a{
+        font-size :14px;
+    }
+    .lab{
+        padding: 3px;
+        margin-left: 9px;
+        position: relative;
+    }
+    .lab button{
+        position: absolute;
+        left: 180px;
+        bottom: -72px;
+        margin-top: 12px;
+    }
+    .lab a{
+        bottom: -34px;
+    }
+    .lab input{
+        left: 50px;
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+    .login{
+        margin-left: 1px;
+        margin-right: 450px;
+        margin-bottom: 130px;
+        padding: 10px;
+    }
+    fieldset{
+        width: 250px;
+
+    }
+}
+@media screen and (max-width: 316px){
+    .log{
+        width: 50px;
+    }
+    .head{
+        top:0;
+        left: 60px;
+        font-size: 10px;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 120px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+        z-index: 1;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:12px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 100%;
+    }
+    footer p{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :12px;
+        display: block;
+    }
+    .foot{
+        text-align: center;
+        position: relative;
+        bottom: 2px;
+        left: 0px;
+        
+    }
+    .lab{
+        padding: 0px;
+        margin-left: 1px;
+    }
+    .lab button{
+        position: absolute;
+        left: 10px;
+        bottom: -72px;
+        margin-top: 12px;
+    }
+    .lab a{
+        bottom: -34px;
+        left: -82px;
+    }
+    .lab input{
+        left: 0px;
+        margin-top: 12px;
+        margin-bottom: 7px;
+    }
+    .login{
+        margin-left: 1px;
+        margin-right: 450px;
+        margin-bottom: 130px;
+        padding: 10px;
+    }
+    fieldset{
+        width: 50px;
+
+    }
+}
