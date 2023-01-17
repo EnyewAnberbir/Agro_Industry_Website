@@ -1,0 +1,525 @@
+body{
+    overflow: auto;
+    background: linear-gradient(-45deg, #ff9f4d 10%, #ffc857 0, #ffc857 90%, #ff9f4d 0, #ff9f4d 100%);
+    position: relative;
+}
+.header{
+    position: relative;
+    top: 20px;
+}
+.head{
+    position: absolute;
+    top:0;
+    left: 120px;
+}
+a{
+    text-decoration: none;
+    font-size: 23px;
+
+}
+header a{
+    text-decoration: none;
+    font-size: 23px;
+    color:rgb(8, 8, 8);
+
+}
+.bars{
+    display: none;
+}
+header a:hover{
+    text-decoration: underline;
+    color:rgb(75, 165, 239);
+}
+.nav ul{
+    list-style: none;
+    display: inline-flex;
+    position: absolute;
+    top: 20px;
+    right:0;
+}
+.m{
+    margin-left: 30px;
+    margin-right:12px;
+    }
+.n{
+    margin-right:12px;
+}
+.product1{
+    display: grid;
+    grid-template-columns: 520px 300px 300px 180px;
+    grid-template-rows: 300px 360px;
+    grid-gap: 50px;
+}
+.product1 img{
+    width: 500px
+}
+.part1{
+    grid-row: span 2;
+}
+.navBar.active{
+    display: block;
+}
+.In{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 50px 500px;
+    grid-gap: 15px;
+}
+footer{
+    position: relative;
+    height: 200px;
+}
+.last{
+    position: absolute;
+    top:0;
+    margin-bottom: 0;
+    right:24px;
+}
+footer p{
+    font-size: 20px;
+}
+.footer a{
+    margin-right: 12px;
+    font-size: 23px;
+    text-decoration: underline;
+    color: black;
+} 
+.footer a:hover{
+    text-decoration: none;
+        
+}
+.footer a i{
+    margin-left: 5px;
+}
+main h1{
+    text-align: center;
+}
+.part1 h2{
+    margin-left: 20px;
+}
+header{
+    background-color: #dfb563;
+    position:sticky;
+    top:0;
+}
+footer{
+    background-color: #dfb563;
+}
+@media screen and (max-width: 1200px){   
+    .header{
+        position: relative;
+        top: 20px;
+    }
+    .head{
+        top: 21px;
+        left: 120px;
+        font-size: 16px;
+    }
+    .header{
+        position: relative;
+        top: 50px;
+    }
+    header a{
+        font-size: 21px;
+    }
+    ul{
+        top: 35px;
+        right:0;    
+    }
+    li.m{
+        margin-left: 5px;
+        margin-right:12px;
+        }
+    li.n{
+        margin-right:9px;
+    }
+    .pag p{
+        font-size: 12px;
+        padding: 12px;        
+    }
+    .foot{
+        bottom: 2px;
+        left: 370px;       
+    }
+    footer p{
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .last{
+        top:12px;
+    }
+    .product1{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 300px 360px;
+        grid-gap: 50px;
+        height: 820px;
+    }
+    .product1 img{
+        width: 100%
+    }
+    .part1{
+        grid-row: span 1;
+    }
+    .part5{
+        grid-column: span 2;
+    }
+    .In{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 500px;
+        grid-gap: 15px;
+    }
+
+}
+@media screen and (max-width: 1080px){   
+    .header{
+        position: relative;
+        top: 20px;
+    }
+    .head{
+        top: 22px;
+        left: 100px;
+        font-size: 11px;
+    }
+    .header{
+        position: relative;
+        top: 50px;
+    }
+    header a{
+        font-size: 21px;
+    }
+    ul{
+        top: 35px;
+        right:0;    
+    }
+    li.m{
+        margin-left: 5px;
+        margin-right:12px;
+        }
+    li.n{
+        margin-right:9px;
+    }
+    .foot{
+        bottom: 2px;
+        left: 370px;       
+    }
+    footer p{
+        font-size: 23px;
+        margin-bottom: 12px;
+    }
+    .last{
+        top:12px;
+    }
+}
+@media screen and (max-width: 960px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 900px;
+    }
+    
+    footer p{
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :20px;
+    }
+    .foot{
+        left: 100px; 
+        right: 100px;   
+    }
+    .product1{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 300px 300px;
+        height: 1100px;
+    }
+    .product1 img{
+        width: 100%
+    }
+    .part1{
+        grid-row: span 1;
+    }
+    .part5{
+        grid-column: span 2;
+    }
+    .In{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 500px;
+        grid-gap: 15px;
+    }
+}
+@media screen and (max-width: 780px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 900px;
+    }
+    .product1{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 330px 300px;
+        height: 1130px;
+    }
+    .product1 img{
+        width: 100%
+    }
+    .part1{
+        grid-row: span 1;
+    }
+    .part5{
+        grid-column: span 2;
+    }
+    .In{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 50px 500px;
+        grid-gap: 15px;
+    }   
+}
+@media screen and (max-width: 600px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 600px;
+    }
+    footer p{
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :14px;
+    }
+}
+@media screen and (max-width: 400px){
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:22px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 400px;
+    }
+    footer p{
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :14px;
+    }
+    .product1{
+        grid-template-columns:300px;
+        grid-template-rows: 300px 360px 300px 300px 300px;
+        grid-gap: 5px;
+        height: 2040px;
+    }
+    .product1 img{
+        width: 100%
+    }
+    .part1{
+        grid-row: span 1;
+    }
+    .part5{
+        grid-column: span 1;
+    }
+    .In{
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: 190px 190px 190px;
+        grid-gap: 15px;
+    } 
+     
+}
+@media screen and (max-width: 316px){
+    .log{
+        width: 50px;
+    }
+    .head{
+        top:0;
+        left: 60px;
+        font-size: 10px;
+    }
+    .bars{
+        display: block;
+        cursor: pointer;
+    }
+    .bars .line{
+        width: 30px;
+        background:black;
+        height: 3px;
+        margin: 6px 0;
+    }
+    .navBar{
+        display:none;
+    }
+    .navBar ul{
+        display: block;
+        width: fit-content;
+        margin-top: 140px;
+        margin-right: 0;
+        text-align: center;
+        transition: 0.2s;
+    }
+    .navBar ul li{
+        margin-bottom: 12px;
+        font-size:12px;       
+    }
+    .navBar ul li a{
+        font-size: 23px;
+    }
+    .navBar ul{
+        background-color: rgb(255, 244, 127);
+        width: 100%;
+    }
+    footer p{
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+    .last a{
+        font-size :12px;
+        display: block;
+    }
+    .foot{
+        text-align: center;
+        position: relative;
+        bottom: 2px;
+        left: 0px;    
+    }
+    .product1{
+        grid-template-columns:120px;
+        grid-template-rows: 150px 460px 460px 590px 300px;
+        grid-gap: 5px;
+        height: 2690px;
+    }
+    .product1 img{
+        width: 100%
+    }
+    p{
+        font-size: 12px;
+    }
+    li p{
+        font-size: 12px;
+    }
+    .part1{
+        grid-row: span 1;
+    }
+    .part1 h2{
+        font-size:17px;
+    }
+    .part5{
+        grid-column: span 1;
+    }
+    .In{
+        display: grid;
+        grid-template-columns: 120px;
+        grid-template-rows: 270px 290px 270px;
+        grid-gap: 15px;
+    } 
+    
+
+}
